@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>No Sidebar - Landed by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/customCss.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script defer src="assets/js/ui/mouse.js"></script>
+    <script src="./assets/js/ractive.js"></script>
+    <script defer src="./assets/js/ui/animations.js"></script>
+    <script src="./assets/components/componentsRactive.js"></script>
+    <script src="./assets/js/data/courseLE.js"></script>
+  </head>
+  <body class="is-preload">
+    <script id="template" type="text/ractive">
+                            <!-- Header -->
+                               <header-c/>
+                        <div id="page-wrapper">
+
+
+                        		<section id="banner">
+                			<div class="content">
+
+                				<header  class="major">
+            <img style="width:30rem" src="./assets/custom/photos/label_full.png" alt="" />
+                     <h2>Стань мастером лазерной эпиляции</h2>
+                               <h3>  Пройди курс по лазерной эпиляции от Enjoy и открой свой кабинет лазерной эпиляции уже через <strong>2 недели </strong>!</h3>
+                   <div style="display:flex;flex-direction:row;justify-content:space-around">
+                           <image-c imgClass="fas fa-magic" header="БЕСЦЕННЫЕ ЗНАНИЯ" content="Основные навыки самых эффективных лазерных технологий" />
+                           <image-c imgClass="fas fa-user-check" header="ПРОФЕССИОНАЛИЗМ" content="Профессиональное обучение лазерной эпиляции от опытных экспертов в данной области." />
+                           <image-c imgClass="fas fa-hand-holding-usd" header="ВЫСОКИЙ ДОХОД" content="Развивай бизнес в такте с высокими доходами – ваш успех наш приоритет!" />
+                           <image-c imgClass="fas fa-handshake" header = "ПРАКТИКА" content="Утвердите свои знания и навыки, применяя их на практике"  />
+                    </div>
+                				</header>
+
+
+                			</div>
+                		</section>
+
+
+                    <section  class="wrapper style2 special fade">
+                      <div class="container">
+                        <header>
+                          <h2>При правильной организации работы, кабинет лазерной эпиляции приносит доход от <strong>20.000</strong> zł в месяц </h2>
+                        </header>
+                      </div>
+                    </section>
+
+
+                    <section  class="wrapper style1  ">
+                        	<div class="container">
+
+
+
+
+
+                            Наши принципы:
+
+      Профессионализм и качество. Мы стремимся передать нашим студентам самые современные и проверенные методики, чтобы каждый выпускник мог стать выдающимся специалистом в области лазерной эпиляции.
+
+      Индивидуальный подход. Понимая уникальность каждого студента, мы предлагаем персонализированный подход к обучению, учитывая их потребности и профессиональные цели.
+
+      Современное оборудование. Наши учебные программы основаны на последних достижениях в сфере лазерной эпиляции, используя высокотехнологичное оборудование и техники.
+
+      Практическая ориентированность. Мы уделяем особое внимание практической части обучения, предоставляя студентам реальный опыт работы с оборудованием и клиентами.
+
+      Поддержка после обучения. Наша поддержка не заканчивается с момента окончания курса. Мы остаемся рядом с нашими выпускниками, предоставляя консультации и возможности для дополнительного обучения.
+
+
+
+      Добро пожаловать в [Название вашего центра обучения] – место, где ваши профессиональные мечты в области лазерной эпиляции становятся реальностью!
+
+      Кто мы:
+
+      Мы - команда экспертов с многолетним опытом в области лазерной эпиляции и обучения. В [Название вашего центра] мы предоставляем обширные знания и практические навыки, необходимые для успешной карьеры в индустрии красоты и ухода за кожей.
+
+                          </div>
+
+
+                    <section  class="wrapper style1  ">
+                    <div class="container">
+                      		<header class="major">
+      			                <h2>Программа курса</h2>
+      		                </header>
+                      <tabs-c items={{courseLEProgram}} />
+                    </div>
+                  </section>
+
+
+                    <section>Цена</section>
+                    <section> Аппарат </section>
+
+                      <footer-c></footer-c>
+                       </div>
+    </script>
+
+    <script>
+      var ractive = new Ractive({
+        target: "body",
+        template: "#template",
+        data: {
+          courseLEProgram: window.courseLEProgram,
+        },
+      });
+    </script>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

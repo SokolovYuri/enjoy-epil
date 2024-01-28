@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/customCss.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script defer src="assets/js/ui/mouse.js"></script>
+    <script src="./assets/js/ractive.js"></script>
+    <script defer src="./assets/js/ui/animations.js"></script>
+    <script src="./assets/components/componentsRactive.js"></script>
+
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload landing">
+    <script id="template" type="text/ractive">
+
+
+         <header-c/>
+                 <div       id="page-wrapper">
+
+                 	<!-- Header -->
+
+
+                 	<!-- Main page -->
+                 		<section id="banner">
+                 			<div class="content">
+                 				<header  class="major">
+      					  <img style="width:30rem" src="./assets/custom/photos/label_full.png" alt="" />
+                 				</header>
+                 				<span class="image"><img src="./assets/custom/photos/promotions/laser_OUR.jpg" alt="" /></span>
+                 			</div>
+                 		</section>
+
+                 	<!-- first page -->
+                 		<section id="one" class="spotlight style1 bottom">
+                 			<span class="image fit main"><img src="./assets/custom/photos/prices/bedra.jpg" alt="" /></span>
+                 			<div class="content">
+                 				<div class="container">
+                 					<div class="row">
+                 						<div class="col-6 col-12-medium">
+                 							<header>
+                 								<h2>Гладкая кожа после первого сеанса</h2>
+                 							</header>
+
+                 									<h3 animation="animate__zoomIn"  class="animate__animated animate__slower"  style="color:green;font-weight:600">✔ Без раздражений</h3>
+                 									<h3 animation="animate__zoomIn"  class="animate__animated animate__slower animate__delay-2s"   style="color:green;font-weight:600">✔ Без вростаний</h3>
+                 									<h3  animation="animate__zoomIn"  class="animate__animated animate__slower animate__delay-3s" style="color:green;font-weight:600">✔ Идеальная гладкость до 5ти лет</h3>
+                 									<h3 animation="animate__zoomIn"  class="animate__animated animate__slower animate__delay-4s" style="color:green;font-weight:600">✔ Индивидуальные пакетные предложения</h3>
+
+                 						</div>
+
+
+
+                 							<div class="col-6 col-12-medium">
+                 								<header>
+                 									<h2>Оставь заявку и мы с Bами свяжемся</h2>
+                 								</header>
+                 								<form method="post" action="#">
+                 									<div class="row gtr-uniform gtr-50">
+                 										<div >
+                 											<input type="text" name="name" id="name" value="" placeholder="Имя" />
+                 										</div>
+                 										<div >
+                 											<input type="email" name="email" id="email" value="" placeholder="Eмейл" />
+                 										</div>
+                										<div>
+                 											<button-c isPrimary='true'  classes="animate__animated animate__heartBeat  animate__slower"  />
+                 										</div>
+                 									</div>
+                 								</form>
+                 							</div>
+                 					</div>
+                 				</div>
+                 			</div>
+                 		</section>
+
+
+
+                 	<!-- About us -->
+                 		<section id="two" class="spotlight style2 right">
+                 			<span class="image fit main"><img src="./assets/custom/photos/prices/nogi.jpg" alt="" /></span>
+                 			<div class="content">
+                 				<header>
+                 					<h2>Привет, мы - ваш путь к гладкой  коже!</h2>
+                 					<h3>Наши  преимущества:</h3>
+                 				</header>
+                 				<div> <strong style="color:green;font-weight:600">1. Опыт и Профессионализм: </strong> Мы в этом бизнесе давно и знаем, как достичь лучших результатов.  </div>
+                 				<div> <strong style="color:green;font-weight:600">2. Современное Оборудование: </strong> Мы внедряем передовые технологии, чтобы сделать вашу эпиляцию максимально
+                 				комфортной.</div>
+                 				<div>  <strong style="color:green;font-weight:600">3. Персональный Подход:</strong> Каждый клиент для нас особенный, и мы разрабатываем индивидуальные программы.</div>
+                 				<div><strong style="color:green;font-weight:600">4. Забота о Результатах: </strong> Мы гарантируем, что вы полюбите результаты. </div>
+                 			</div>
+                 			<a href="#three" class="goto-next scrolly">Next</a>
+                 		</section>
+
+                 	<!-- Prices laser -->
+                 		<section id="three" class="spotlight style3 left">
+                 			<span class="image fit main bottom"><img src="./assets/custom/photos/promotions/laser_OUR_2.jpg" alt="" /></span>
+                 			<div class="content">
+                 						<section>
+                 								<header class="major">
+                 									<h3>Цены на Лазрную эпиляцию</h3>
+                 								</header>
+
+                 							<div class="table-wrapper">
+                 								<table>
+                 									<thead>
+                 										<tr>
+
+                 											<th></th>
+                 											<th></th>
+                 										</tr>
+                 									</thead>
+                 									<tbody>
+      					<tr animation="animate__bounce" class="animate__animated animate__slower">
+      			<td>Глубокое бикини</td>
+      			<td style="color:green;font-weight:600"  >185 zl</td>
+      					</tr>
+      					<tr animation="animate__bounce" class="animate__animated animate__slower">
+      			<td>Ноги полностью</td>
+      			<td style="color:green;font-weight:600">315 zl</td>
+      					</tr>
+      				<tr animation="animate__bounce" class="animate__animated animate__slower">
+      						<td>Стегна</td>
+      						<td style="color:green;font-weight:600">190 zl</td>
+      					</tr>
+      				<tr animation="animate__bounce" class="animate__animated animate__slower">
+      						<td>Гомiлки</td>
+      						<td style="color:green;font-weight:600">220 zl</td>
+      					</tr>
+      				<tr animation="animate__bounce" class="animate__animated animate__slower">
+      						<td>Живот полностью</td>
+      						<td style="color:green;font-weight:600">155 zl</td>
+      					</tr>
+      			<tr animation="animate__bounce" class="animate__animated animate__slower">
+      						<td>Бикини(лобок)</td>
+      						<td style="color:green;font-weight:600">135 zl</td>
+      					</tr>
+      														</tbody>
+                 								</table>
+                 							</div>
+
+
+                 				<ul class="actions">
+                 					<li><a href="#" class="button">Подробнее</a></li>
+                 					<li><button-c isPrimary='true'  classes="animate__animated animate__heartBeat  animate__slower"  /></li>
+                 				</ul>
+                 			</div>
+                 		</section>
+
+
+
+                 		<!-- Prices Electroepilation -->
+                 				<section id="three" class="spotlight style3 right">
+                 			<span class="image fit main bottom"><img src="./assets/custom/photos/promotions/laser_OUR_2.jpg" alt="" /></span>
+                 			<div class="content">
+                 						<section>
+                 							<header class="major">
+                 								<h3>Цены на Электроэпилцию</h3>
+                 								<p>1 час - 120zl</p>
+                 							</header>
+                 							<div class="table-wrapper">
+                 								<table>
+                 									<thead>
+                 										<tr>
+                 											<th></th>
+                 											<th></th>
+                 										</tr>
+                 									</thead>
+                 									<tbody>
+                 										<tr >
+                 											<td>5 часов</td>
+                 											<td  animation="animate__bounce"  class="animate__animated   animate__slower" ><strong style="color:red"><strike>600 zl </strike></strong>&nbsp; &nbsp; <strong  >540 zl</strong></td>
+                 										</tr>
+                 										<tr>
+                 											<td>10 часов</td>
+                 											<td animation="animate__bounce"  class="animate__animated animate__bounce  animate__slower"> <strong style="color:red"><strike> 1200 zl </strike></strong> &nbsp; <strong> 1020 zl </strong> </td>
+                 										</tr>
+                 										<tr>
+
+                 											<td> 15 часов</td>
+                 											<td animation="animate__bounce" ><strong style="color:red"><strike> 1800 zl </strike></strong>&nbsp; <strong>1440 zl</strong> </td>
+                 										</tr>
+                 									</tbody>
+
+                 								</table>
+                 							</div>
+
+                 								<ul class="actions">
+                 									<li><a href="#" class="button">Подробнее</a></li>
+                 									<li><button-c isPrimary='true'  classes="animate__animated   animate__slower"  /></li>
+                 								</ul>
+                 			</div>
+                 			<a href="#four" class="goto-next scrolly">Next</a>
+                 		</section>
+
+               <!-- OUR PRODUCSIA -->
+
+
+
+               	<section id="one" class="spotlight style1 bottom">
+                 			<span class="image fit main"><img src="assets/custom/photos/cosmetics/promotion_2.jpg" alt="" /></span>
+                 			<div class="content">
+                 				<div class="container">
+                 						<div >
+                 							<header>
+                 								<h2 style="text-align: center;">Наша продукция</h2>
+                 							</header>
+                 						 <p>После  эпиляции ваша кожа требует особого внимания, и наши косметические продукты разработаны, чтобы сделать это восстановление приятным и эффективным. Наши ухаживающие средства обеспечивают нежное увлажнение и успокаивают раздраженную кожу, помогая ей быстро восстановиться.</p>
+                					 <p>Специально разработанные продукты после лазерной эпиляции позволяют вам наслаждаться результатами процедуры, минимизируя неприятные ощущения. Выберите нашу косметику для поддержки вашей кожи на пути к гладкости и сиянию. Восстановление красоты после лазерной эпиляции становится приятным и легким благодаря нашим продуктам.</p>
+                 						</div>
+
+               	<div style="width:100%">
+               		<button-c link="production.html" style="width:100%"  label="Посмотреть  продукцию"   />
+               	</div>
+                 				</div>
+
+                 			</div>
+
+
+                 		</section>
+
+
+
+      <!-- Obuchenie -->
+
+      		<div id="main" class="wrapper style1">
+      	<div class="container">
+      		<header class="major">
+      			<h2>Обучение</h2>
+      			<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
+      		</header>
+      		<div class="row gtr-150">
+      			<div class="col-4 col-12-medium">
+
+      				<!-- Sidebar -->
+      					<section id="sidebar">
+      						<section>
+      							<h3>Magna Feugiat</h3>
+      							<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
+      							<footer>
+      								<ul class="actions">
+      									<li><a href="#" class="button">Learn More</a></li>
+      								</ul>
+      							</footer>
+      						</section>
+      						<hr />
+      						<section>
+      							<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+      							<h3>Amet Lorem Tempus</h3>
+      							<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+      							<footer>
+      								<ul class="actions">
+      									<li><a href="#" class="button">Learn More</a></li>
+      								</ul>
+      							</footer>
+      						</section>
+      					</section>
+
+      			</div>
+      			<div class="col-8 col-12-medium imp-medium">
+
+      				<!-- Content -->
+      					<section id="content">
+      						<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+      						<h3>Dolore Amet Consequat</h3>
+      						<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at magna consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
+      						<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique.</p>
+      						<h3>Sed Magna Ornare</h3>
+      						<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus.</p>
+      						<ul>
+      							<li>Faucibus orci lobortis ac adipiscing integer.</li>
+      							<li>Col accumsan arcu mi aliquet placerat.</li>
+      							<li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
+      							<li>Blandit massa non blandit tempor interdum.</li>
+      							<li>Lacinia mattis arcu nascetur lobortis.</li>
+      						</ul>
+      					</section>
+
+      			</div>
+      		</div>
+      	</div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+                 	<!-- Specialnie paketnie predlogenia -->
+                 		<section id="four" class="wrapper style1 special fade-up">
+                 			<div class="container">
+                 				<header class="major">
+                 					<h2>Специальные пакетные предложения</h2>
+                 					<p>Лазерная эпиляция</p>
+                 				</header>
+                 				<section id="timeline">
+                 					<div animation="animate__flipInY"  class="tl-item animate__animated animate__slower ">
+                 						<div class="tl-bg" style="background-image: url(./assets/custom/photos/prices/specialnoe_predlozhenie_1.jpg)"></div>
+                 						<div class="tl-year">
+                 							<p>1</p>
+                 						</div>
+
+                 						<div class="tl-content">
+                 							<h1>  <header class="major"> Глубокое бикини  <br> +  <br>  подмышки <br>  </header> 220 zl  {{ translate("blockPrices.bikini_podmishki", @global.currLanguage) }}</h1>
+                 						</div>
+                 					</div>
+
+                 					<div animation="animate__flipInY"  class="tl-item animate__animated animate__slower ">
+                 						<div class="tl-bg" style="background-image: url(./assets/custom/photos/prices/specialnoe_predlozhenie_2.jpg)"></div>
+                 						<div class="tl-year">
+                 							<p class="f2 heading--sanSerif">2</p>
+                 						</div>
+
+                 						<div class="tl-content">
+                 							<h1><header class="major"> Глубокое бикини <br> + <br>  подмышки <br> +   <br> голени <br> {{ translate("blockPrices.bikini_podmishki_goleni", @global.currLanguage)
+                 								}} </header> 410 zl  </h1>
+                 						</div>
+                 					</div>
+
+                 					<div animation="animate__flipInY"  class="tl-item animate__animated animate__slower ">
+                 						<div class="tl-bg" style="background-image: url(./assets/custom/photos/prices/specialnoe_predlozhenie_3.jpg)"></div>
+                 						<div class="tl-year">
+                 							<p class="f2 heading--sanSerif">3</p>
+                 						</div>
+                 						<div class="tl-content">
+                 							<h1 class="f3 text--accent ttu"> <header class="major"> Глубокое бикини <br> + <br>  подмышки <br> + <br> ноги полностью </header> 460 zl
+                 							</h1>
+                 						</div>
+                 					</div>
+                 				</section>
+                 				<footer class="major">
+                 					<div style="width:100%">
+               							<button-c link="production.html" style="width:100%"  label="Подробнее о предложениях"   />
+               						</div>
+                 				</footer>
+                 			</div>
+                 		</section>
+
+                 	<!-- FAQ -->
+                 		<section id="five" class="wrapper style2 special fade">
+                 			<div class="container">
+                 				<header>
+                 					<h2>Отвечаем на самые популярные вопросы</h2>
+
+                 				</header>
+                 										<div class="faq-content">
+                 											<div class="faq-question">
+                 												<input id="q1" type="checkbox" class="panel">
+                 												<label for="q1" class="panel-title">{{translate("blockFAQ.question1.question", @global.currLanguage)}}</label>
+                 												<div class="panel-content">{{translate("blockFAQ.question1.answer", @global.currLanguage)}}</div>
+                 											</div>
+
+                 											<div class="faq-question">
+                 												<input id="q2" type="checkbox" class="panel">
+                 												<label for="q2" class="panel-title">{{translate("blockFAQ.question2.question", @global.currLanguage)}}</label>
+                 												<div class="panel-content">{{translate("blockFAQ.question2.answer", @global.currLanguage)}}</div>
+                 											</div>
+
+                 											<div class="faq-question">
+                 												<input id="q3" type="checkbox" class="panel">
+                 												<label for="q3" class="panel-title">{{translate("blockFAQ.question3.question", @global.currLanguage)}}</label>
+                 												<div class="panel-content">{{translate("blockFAQ.question3.answer", @global.currLanguage)}}</div>
+                 											</div>
+
+                 											<div class="faq-question">
+                 												<input id="q4" type="checkbox" class="panel">
+                 												<label for="q4" class="panel-title">{{translate("blockFAQ.question4.question", @global.currLanguage)}}</label>
+                 												<div class="panel-content">{{translate("blockFAQ.question4.answer", @global.currLanguage)}}</div>
+                 											</div>
+                 										</div>
+                 			</div>
+                 		</section>
+
+                 	<!-- Footer -->
+                 	<footer-c/>
+
+      </div>
+    </script>
+
+    <script>
+      var ractive = new Ractive({
+        target: "body",
+        template: "#template",
+      });
+    </script>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
